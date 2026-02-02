@@ -85,4 +85,21 @@ public class TaskTracker{
         System.out.println("Tarea agregada con id " + nextId);
 
     }
+
+    /*Actualizar tarea
+    * buscar la tarea por su id
+    * cambiar la descripcion de esta tarea
+    * actualizar la fecha
+    * y decir que si se puede o no actualizar
+    * */
+
+    private static boolean updateTask(List <Task> task,int id, String newDesc){
+        Task t = findById(task,id);
+        if(t == null) return false;
+
+        t.description = newDesc;
+        t.updatedAt = LocalDateTime.now().toString();
+        System.out.println("Tarea " + id + " actualizada.");
+        return true;
+    }
 }
