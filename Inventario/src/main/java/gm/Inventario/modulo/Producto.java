@@ -16,7 +16,7 @@ import lombok.NoArgsConstructor;
 public class Producto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Integer id;
+    Integer idProducto;
     String descripcion;
     Double precio;
     Integer existencia;
