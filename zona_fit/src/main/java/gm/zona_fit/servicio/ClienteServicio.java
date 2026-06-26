@@ -14,6 +14,7 @@ public class ClienteServicio implements IClienteServicio{
     //inyectar una dependencia
     @Autowired
     private ClienteRepositorio clienteRepositorio;
+
     @Override
     public List<Cliente> listarCLiente() {
         List<Cliente> clientes = clienteRepositorio.findAll();

@@ -54,11 +54,12 @@ public class ZonaFitApplication implements CommandLineRunner {
 
 	private int mostrarMenu(Scanner consola){
 		log.info("""
-				***Aplicacion Zona Fit (Gym)***
-				1. Mostra cliente
-				2. Buscar cliente
-				3. Agregar cliente
-				4. Mo
+			***Aplicacion Zona Fit (Gym)***
+			1. Mostra cliente
+			2. Buscar cliente
+			3. Agregar cliente
+			4. Modificar cliente
+			5. 
 				""");
 		int  opcion = consola.nextInt();
 		return opcion;
